@@ -1,4 +1,3 @@
 {{ partial "header.html" . }}
-{{ range $index, $page := (.Paginate (where (where site.RegularPages "Type" "posts") ".Params.hidden" "ne" "true" )).Pages }}
 {{ partial "custombody.html" . }}
 {{ partial "footer.html" . }}
